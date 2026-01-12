@@ -5,14 +5,11 @@ Este proyecto es una solución integral de ingeniería que combina **Inteligenci
 
 ---
 
-## 📺 Demostración en Video
-[![Ver Funcionamiento de la Banda](https://img.youtube.com/vi/TU_ID_DE_YOUTUBE/0.jpg)]([https://www.youtube.com/watch?v=TU_ID_DE_YOUTUBE](https://www.youtube.com/watch?v=X4rHUJtbelk))
+## 📺 Demostración en Video y 📸 Montaje del Hardware (Physical Setup)
+[![Ver Funcionamiento de la Banda](smart_conveyor_setup.jpg)](https://www.youtube.com/watch?v=X4rHUJtbelk)
+
 *Haz clic en la imagen para ver el sistema en acción: Detección, comunicación serial y clasificación física.*
 
----
-
-## 📸 Montaje del Hardware (Physical Setup)
-![Smart Conveyor Setup](smart_conveyor_setup.jpg)
 *Vista del prototipo: Integración de cámara USB, driver L298N, servomotor, pantalla TFT y la unidad de control ESP32.*
 
 ---
@@ -34,9 +31,19 @@ El proyecto opera bajo una arquitectura de procesamiento distribuido:
 ---
 
 ## 📂 Estructura del Repositorio
-* **`IA_Model/`**: Scripts para entrenamiento y validación del modelo KNN.
-* **`App_PC/`**: Aplicación de visión artificial y puente de comunicación serial.
-* **`ESP32_Firmware/`**: Código MicroPython para el control de motores, sensores y pantalla.
+
+* **`datasette/`**: Scripts para entrenamiento y validación del modelo KNN.
+ 
+* **`programación de la ia/`**: Aplicación de visión artificial y puente de comunicación serial.
+  
+* **EntrenamientoIA.py**: Script para procesar el dataset y generar el modelo .pkl.
+  
+ * **ProgramaciónIA.py**: Script de ejecución en tiempo real que usa la cámara y la comunicación serial.
+  
+* **`Tony/`**: Código MicroPython para el control de motores, sensores y pantalla.
+  
+ * **PROGRAMACION_BANDA_TRANSPORTADORA.py**: Lógica de control de motores, servomotores y pantalla TFT.
+  
 * **`modelo_knn_colores_mejor.pkl`**: Modelo de IA entrenado listo para producción.
 
 ---
@@ -51,4 +58,4 @@ El proyecto opera bajo una arquitectura de procesamiento distribuido:
 ## 👨‍💻 Autor
 **Kevin David Mosquera Trujillo**
 * Ingeniería Mecatrónica.
-* Especialista en Integración de IA y Sistemas de Control.
+* Interesado en la convergencia de IA, Visión Artificial y Sistemas de Control.
